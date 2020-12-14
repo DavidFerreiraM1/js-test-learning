@@ -1,0 +1,76 @@
+# Qualidade dentro do projeto
+
+## TRIÂNGULO DE MCCAL
+### Operação
+ => Corretude - ele faz o que é pedido?
+ => Confiabilidade - ele é preciso?
+ => Eficiência - Ele tem boa performance?
+ => Integridade - oferece segurança?
+ => Usabilidade - Fácil de usar?
+ => Adaptabilidade - ele se adapta as necessidades do usuário?
+
+### Trasição
+ => Portabilidade - Consigo movêlo facilmente?
+ => Reusabilidade - Posso utilizar parte dele?
+ => Interoperatividade - Ele trabalha com outros softwares em conjunto?
+
+### Revisão
+Manutenibilidade -  Fácil de corrigir?
+Flexibilidade - Fácil de mudar?
+Testabilidade - Posso testar seu funcionamento
+
+## Escrita de código
+ => Métodos devem ser pequenos
+ => Deve possuir uma única responsabilidade
+ => Permitir Reuso
+ => Não colocar comentário demais
+ 
+## SOBRE OS TESTES
+ => Reduz o tempo de gasto em análise e correção de bugs
+ => Facilita refatoração
+ => Gera documentação
+ => Melhora o design do código
+ => Garante que o trabalho tenha qualidade
+ 
+## FLUXOS DO TDD
+ => Escrever o teste
+ => Fazer o código funcionar
+ => Escrever um segundo caso
+ => Corrigir
+ => Refatorar (eliminar redundância)
+ 
+## PENSAR NO QUE TESTAR
+ => O que o código tem que fazer
+ => Que dado recebe
+ => Que dados precisam retornar
+ => Ações que fazem o código funcionar
+ 
+## TIPOS DE TESTES
+### UI, SERVICE, UNIT
+
+## SPIES
+ => Muito útilo para monitorar callbacks, permite verificar se um método é chamado dentro de outro método que estamos testando
+
+## STUBS
+ => Controle de comportamento de teste, Pular uma parte desnecessária do código, simplificar o teste assíncrono
+ 
+## MOCKS
+ => métodos falsos com comportamentos pré-programados
+ 
+## O QUE SE DEVE FAZER
+ => describe - descrição
+ => context - caso
+ => it - A ação de teste (espera que acontença algo, entrada de dados, espera um retorno)
+ 
+## FERRAMENTAL
+ => Mocha, Chai
+ => npm test -- --bail (mata a sequência de testes no primeiro que falha)
+ => context.
+  only - executa o teste somente daquele context
+  skip - executa a sequência de teste, porém salta o context com skip
+
+## HOOKS DO MOCHA
+ => before - Roda antes do bloco
+ => beforeEach - Roda antes de cada teste
+ => after - roda depois de todos os blocos
+ => aftereach - roda depois de cada bloco

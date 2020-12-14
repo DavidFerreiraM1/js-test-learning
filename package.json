@@ -1,0 +1,20 @@
+{
+  "name": "tdd-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha __tests__/**/*.spec.js --require @babel/register"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.10",
+    "@babel/register": "^7.12.10",
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}
