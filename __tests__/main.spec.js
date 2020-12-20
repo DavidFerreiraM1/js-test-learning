@@ -4,12 +4,16 @@ import { paginator } from '../src/main';
 describe('Main', function(){
   let returnData = {}
 
-  before('create arraydata', function() {
+  const arrayCreator = (length) => {
     let values = [];
-    for(let i = 0; i < 100; i++) {
+    for(let i = 0; i < length; i++) {
       values.push(i);
     };
-    returnData = paginator(values, 15);
+    return values;
+  }
+
+  before('create arraydata', function() {
+    returnData = paginator(arrayCreator(100), 15);
   });
 
   context('Paginator', function() {
@@ -23,6 +27,10 @@ describe('Main', function(){
 
     it('should to have more paginations', () => {
       expect(returnData).to.have.property('2');
+    });
+
+    it('should to return only one pagination', () => {
+      expect(paginator(arrayCreator(0),15)).not.to.have.property('2');
     });
   });
 });

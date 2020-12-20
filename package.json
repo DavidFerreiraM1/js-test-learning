@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx mocha __tests__/**/*.spec.js --require @babel/register"
+    "test": "npx mocha __tests__/**/*.spec.js --require @babel/register",
+    "test:coverage": "nyc npm test"
+  },
+  "nyc": {
+    "reporter": ["text", "html"],
+    "exclude": ["__tests__/**"]
   },
   "keywords": [],
   "author": "",
@@ -15,6 +20,7 @@
     "@babel/preset-env": "^7.12.10",
     "@babel/register": "^7.12.10",
     "chai": "^4.2.0",
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "nyc": "^15.1.0"
   }
 }
