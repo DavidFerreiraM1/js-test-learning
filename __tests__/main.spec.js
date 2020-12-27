@@ -16,7 +16,7 @@ describe('Main', function(){
     returnData = paginator(arrayCreator(100), 15);
   });
 
-  context('Paginator', function() {
+  describe('Paginator', function() {
     it('should to return object data', () => {
       expect(returnData).to.be.an('object');
     });

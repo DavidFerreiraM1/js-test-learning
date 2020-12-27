@@ -59,8 +59,8 @@ Testabilidade - Posso testar seu funcionamento
  
 ## O QUE SE DEVE FAZER
  => describe - descrição
- => context - caso
  => it - A ação de teste (espera que acontença algo, entrada de dados, espera um retorno)
+ => context - caso ( vai dentro dos IT's)
  
 ## FERRAMENTAL
  => Mocha, Chai
